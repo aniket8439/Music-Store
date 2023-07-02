@@ -25,8 +25,8 @@ export const SearchPage =  () => {
     const jsx = <><Search fn = {getArtistName}/>
     <Songs fn = {togglePlayer} allsong = {allSongs}/></>
     return(
-        <div className="container">
-            <h1 className='alert alert-info text-center'>Music Store</h1>
+        <div className="container-fluid p-5">
+            <h1 className='alert alert-info text-center '>Music Store</h1>
             {flag?<Player fn = {togglePlayer} song = {song}/>:jsx}
             
         </div>
